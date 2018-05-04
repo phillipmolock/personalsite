@@ -1,0 +1,24 @@
+/* 
+-----------------------
+By default we want all (*) elements to have 0 margin, 0 padding, and a border-box for box-sizing
+html, body:
+ -We want a uniform background-color, color, font-family, font-weight, font-size
+-----------------------
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    border: solid;
+}
+
+/* 
+    Grid
+*/
+
+.row {
+    display: grid;
+}
