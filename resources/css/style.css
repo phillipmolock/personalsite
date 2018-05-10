@@ -206,7 +206,7 @@ PROJECTS
         "node-chat-app node-weather-app eth-chainlist node-webserver";
     padding: 2.5% 10% 0 10%;
     background-color: #f6f6f6;
-    height: 50vh;
+    
 }
 .projects h1 {
     grid-area: projects-header;

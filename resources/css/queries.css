@@ -1,0 +1,16 @@
+@media (max-width: 500px) {
+    body {
+        font-size: 15px;
+    }
+    
+    .projects {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            "projects-header projects-header"
+            "node-chat-app node-weather-app" 
+            "eth-chainlist node-webserver";
+        grid-row-gap: 25px;
+        grid-column-gap: 10px;
+    }
+    
+}
