@@ -1,24 +1,334 @@
 /* 
------------------------
-By default we want all (*) elements to have 0 margin, 0 padding, and a border-box for box-sizing
-html, body:
- -We want a uniform background-color, color, font-family, font-weight, font-size
------------------------
-*/
+    Core Structure *, Body > header, main, footer
+*/ 
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-section {
-    border: solid;
+body {
+    background-color: #fff;
+    display: grid;
+    width: 100%;
+    font-size: 20px;
+    font-family: 'Roboto', 'Arial', sans-serif;
+    grid-template-areas:    "header" 
+                            "main" 
+                            "footer";
+    list-style-position: inside;
+}
+
+ul ul {
+    padding-left: 2.5%;
+}
+
+ul {
+    font-size: 85%;
+}
+
+main ul li {
+    padding: 5px 0;
+}
+
+header {
+    grid-area: header;
+    display: grid;
+    grid-template-rows: 3fr 7fr;
+    grid-template-areas: 
+        "nav"
+        "introduction";
+    
+    height: 100vh;
+    padding: 2.5% 2.5% 0 2.5%;
+    
+    color: #fff;
+    
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(img/header.JPG);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+main {
+    grid-area: main;
+    display: grid;
+    grid-row-gap: 100px;
+    grid-template-areas: 
+        "experience"
+        "projects"
+        "education";
+    
+    width: 100%;
+    
+}
+
+footer {
+    grid-area: footer;
+    display: grid;
+    background-color: #e3e3e3;
+}
+
+/*
+-----------------------------------------------------------------------------------
+    CORE ELEMENTS
+-----------------------------------------------------------------------------------
+*/
+
+a { 
+    text-decoration: none;
+}
+/* 
+-----------------------------------------------------------------------------------
+HEADER ELEMENTS
+-----------------------------------------------------------------------------------
+*/
+header ul li {
+    list-style-position: inside;
+    list-style: none;
+    display: inline-block;
+    color: #fff;
+    padding: 1% 1%;
+}
+
+header ul li a {
+    color: #fff;
+}
+
+.social-nav {
+    grid-area: social-nav;
+    font-size: 200%;
+}
+
+.ion-social-linkedin:hover{
+    color: #007bb6;
+}
+.ion-social-github:hover{
+    color: #333;
+}
+
+nav {
+    grid-area: nav;
+    text-align: center;
+    font-size: 125%;
+}
+
+nav a:hover,
+nav a:active {
+    border-bottom: 2px solid #e67e22;
+}
+
+.introduction {
+    grid-area: introduction;
+    text-align: center;
+/*
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+*/
+    line-height: 1.45;
+}
+
+.introduction span {
+    color: #e67e22;
+}
+
+.contact {
+    border: 1px solid #e67e22;
+    padding: 2% 7%;
+    border-radius: 200px;
+}
+.contact:hover {
+    background: #e67e22;
+    border: 1px solid #e67e22;
+}
+/* 
+-----------------------------------------------------------------------------------
+EXPERIENCE
+-----------------------------------------------------------------------------------
+*/
+
+.experience {
+    display: grid;
+    grid-template-columns: 8fr 2fr;
+    grid-template-areas: 
+        "experience-header experience-header"
+        "microsoft-chicago microsoft-chicago-dates"
+        "microsoft-atlanta microsoft-atlanta-dates"
+        "microsoft-fargo microsoft-fargo-dates";
+    grid-row-gap: 50px;
+    grid-area: experience; 
+    padding: 2.5% 10% 0 10%;
+    
+    
+}
+
+.experience h1 {
+    grid-area: experience-header;
+    text-align: center;
+}
+.microsoft-chicago,
+.microsoft-fargo,
+.microsoft-atlanta {
+    padding-right: 5%;
+}
+
+.experience span {
+    color: #e67e22;
+    font-weight: 1000;
+}
+
+.experience h3, 
+.experience h4 {
+    font-style: italic;
+    font-size: 90%;
+    color: #e67e22;
 }
 
 /* 
-    Grid
+-----------------------------------------------------------------------------------
+PROJECTS
+-----------------------------------------------------------------------------------
 */
 
-.row {
+.projects {
     display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-area: projects;
+    grid-template-rows: 1fr 4fr;
+    grid-row-gap: 100px;
+    grid-column-gap: 10px;
+    grid-template-areas: 
+        "projects-header projects-header projects-header projects-header"
+        "node-chat-app node-weather-app eth-chainlist node-webserver";
+    padding: 2.5% 10% 0 10%;
+    background-color: #f6f6f6;
+    height: 50vh;
 }
+.projects h1 {
+    grid-area: projects-header;
+    text-align: center;
+}
+
+.projects div {
+    color: #fff;
+    text-align: center;
+    opacity: 0.95;
+    min-height: 200px;
+    padding: 25% 0;
+}
+
+.projects div:hover {
+    opacity: 1;
+    color: #e67e22;
+}
+
+
+.node-chat-app {
+    grid-area: node-chat-app;
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(img/node-chat-app.jpg);
+    background-size: cover;
+    background-position: center;
+    
+}
+
+
+.node-weather-app {
+    grid-area: node-weather-app;
+        background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(img/node-weather-app.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.eth-chainlist {
+    grid-area: eth-chainlist;
+        background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(img/eth-chainlist.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.node-webserver {
+    grid-area: node-webserver;
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(img/node-webserver.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* 
+-----------------------------------------------------------------------------------
+EDUCATION
+-----------------------------------------------------------------------------------
+*/
+
+.education {
+    display:grid;
+    grid-template-areas: 
+        "education-header education-header"
+        "uga-mis uga-mis-dates"
+        "uga-econ uga-econ-dates";
+    grid-template-columns: 8fr 2fr;
+    grid-row-gap: 50px;
+    background-color: #fff;
+    padding: 2.5% 10% 0 10%;
+    height: 50vh;
+    margin-bottom: 100px;
+}
+
+.education h1 {
+    grid-area: education-header;
+    text-align: center;
+}
+
+.education h3, 
+.experience h4 {
+    font-style: italic;
+    font-size: 90%;
+    color: #e67e22;
+}
+
+
+.uga-mis {
+    grid-area: uga-mis;
+}
+
+.uga-mis-dates {
+    grid-area: uga-mis-dates;
+}
+
+.uga-econ {
+    grid-area: uga-econ;
+}
+
+.uga-econ-dates {
+    grid-area: uga-econ-dates; 
+}
+
+.uga-econ-dates, 
+.uga-mis-dates {
+    color: #e67e22;
+    font-weight: 1000;
+}
+
+/* 
+-----------------------------------------------------------------------------------
+FOOTER
+-----------------------------------------------------------------------------------
+*/
+
+footer { 
+    display: grid;
+    grid-template-areas: 
+        "copyright";
+    background-color: #181818;
+    color: #fff;
+    min-height: 10vh;
+    padding: 2.5% 10% 0 10%;
+    margin-top: 50px;
+}
+
+.copyright {
+    grid-area: copyright;
+    text-align: center;
+}
+

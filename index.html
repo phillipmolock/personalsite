@@ -1,66 +1,203 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <!-- 
-            meta, stylesheet links, title
-        -->
-        <link rel="stylesheet" type="text/css" href="resources/css/style.css">
-        <title>Phillip Dane</title>
-    </head>
-    <body>
-        <header>
-            <!--
-                nav, main text box
-            -->
-            <nav>
-                <h1>Phillip Dane</h1>
-                <ul>
-                    <li><a href="#">Experience</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Education</a></li>
-                    <li><a href="#">Skills</a></li>
-                    <li><a href="#">Community Involvement</a></li>
-                </ul>
-            </nav>
-        </header>
-        <div class="grid-wrapper">
-            <section class="work-experience-section">
-                <!--
-                    Work Experience Section
-                -->
-                <h2>This is my work experience section</h2>
+<html>
 
-            </section>        
-            <section class="projects-section">
-                <!--
-                    Projects Section
-                -->
-                <h2>This is my projects section</h2>
-            </section>        
-            <section class="education-section">
-                <!--
-                    Education Section
-                -->
-                <h2>This is my education section</h2>
-            </section>        
-            <section class="skills-section">
-                <!--
-                    Skills section
-                -->
-                <h2>This is my skills section</h2>
-            </section>        
-            <section class="community-involvement-section">
-                <!--
-                    Community Involvement Section
-                -->
-                <h2>This is my community involvement section</h2>
-            </section>
+<head>
+    <!-- INTERNAL LINKS -->
+    <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+    <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
+
+    <!-- EXTERNAL LINKS -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <title>Phillip Dane</title>
+</head>
+
+<body>
+    <!-- 
+            
+            HEADER
+        
+        -->
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="mailto:phillip.molock@outlook.com" class="contact">Contact</a></li>
+                
+            </ul>
+        </nav>
+        <div class="introduction">
+            <h1>
+                <span>Hi, I'm Phillip.</span>
+            </h1>
+            <p>
+                I'm an aspiring full-stack web 3.0 developer passionate about the decentralized future.
+            </p>
+            <div class="social-nav">
+                <ul>
+                    <li><a href="https://github.com/phillipmolock" target="_blank"><i class="ion-social-github" ></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/phillip-molock-1b4a6979/" target="_blank"><i class="ion-social-linkedin"></i></a></li>
+                </ul>
+            </div>
+
         </div>
-        <footer>
-            <!-- 
-                footer nav, copyright, social links 
-            -->
-        </footer>
-            <!-- JS Libraries --> 
-    </body>
+    </header>
+
+    <!-- 
+
+            MAIN CONTENT 
+
+        -->
+
+    <main id="main">
+        <!-- BEGIN EXPERIENCE SECTION -->
+        <div class="experience" id="experience">
+            <h1>Experience</h1>
+            <div class="microsoft-chicago">
+                <h2>Microsoft</h2>
+                <h3>Technical Account Manager - Enterprise</h3>
+                <h4>Chicago, IL</h4>
+                <ul>
+                    <li>Managed portfolio of 3 Microsoft Premier Enterprise customer contracts valued at $2,795,038.
+                        <ul>
+                            <li>Collaborated with customer leadership to deliver problem management and reactive troubleshooting to relieve technical blockers to key initiatives such as Office 365 migrations, Cloud Operations Rationalization, IT Service Management, Azure Data Analytics, Azure Platform as a Service (PaaS) and Infrastructures as a Service (IaaS) implementations.</li>
+                            <li>Aligned Premier services such as dedicated support engineers, code reviews, technical workshops, and custom onsite consultation to identify and mitigate reactive incidents proactively.</li>
+                        </ul>
+                    </li>
+                    <li>Analyzed portfolio’s business objectives and cloud consumption data to assist with aligning Office 365 and Azure investments with business direction.</li>
+                    <li>Delivered 100% TAM satisfaction on Premier Surveys in FY17.</li>
+                    <li>Attained 115% of Premier Billed Revenue target for my portfolio of customers ($2,743,154 total revenue) in FY17.</li>
+                    <li>Reached 149% of Office Current Active Usage goal in FY17.</li>
+                    <li>Cloud consumption lead and Cloud Ranger for Midwest District assisting team members with understanding Cloud Consumption metrics, tracking, and strategies for attainment. </li>
+                </ul>
+            </div>
+            <div class="microsoft-chicago-dates">
+                <p><span>July 2016 - Present</span></p>
+            </div>
+
+            <div class="microsoft-atlanta">
+                <h2>Microsoft</h2>
+                <h3>Technical Account Manager - Enterprise</h3>
+                <h4>Atlanta, GA</h4>
+                <ul>
+                    <li>Managed portfolio of 4 Microsoft Premier Enterprise customer contracts valued at $1,431,272.
+                        <ul>
+                            <li>Partnered closely with Information Technology (IT) and business leadership to deliver problem management and reactive troubleshooting to relieve technical blockers to key initiatives such as Office 365 migrations, global datacenter consolidations, IT Service Management, and Azure Identity and Infrastructures as a Service (IaaS) implementations.</li>
+                            <li>
+                                Aligned Premier services such as risk assessments, technical workshops, and custom onsite consultation to identify and mitigate reactive incidents proactively.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>Grew the value of my portfolio by $481,181.</li>
+                    <li>Delivered 100% TAM satisfaction on Premier Surveys.</li>
+                    <li>Delivered 100% TAM satisfaction on Premier Surveys.</li>
+                </ul>
+            </div>
+            <div class="microsoft-atlanta-dates">
+                <p><span>July 2014 - July 2016</span></p>
+            </div>
+
+            <div class="microsoft-fargo">
+                <h2>Microsoft</h2>
+                <h3>Technical Account Manager - Midmarket</h3>
+                <h4>Fargo, ND</h4>
+                <ul>
+                    <li>
+                        Managed a portfolio of 30 Microsoft Premier Mid-Market customers valued at $880,000.
+                        <ul>
+                            <li>
+                                Partnered closely with IT and business leadership to deliver problem management and reactive troubleshooting to relieve technical blockers to key initiatives such as Exchange Server migrations, Active Directory consolidations, IT Service Management, and Office 365 migrations.
+                            </li>
+                            <li>
+                                Aligned Premier services such as risk assessments, technical workshops, and custom onsite consultation to identify and mitigate reactive incidents proactively.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        Grew the value of my portfolio by $323,288.
+                    </li>
+                    <li>
+                        Delivered 100% TAM satisfaction on Premier surveys.
+                    </li>
+                    <li>
+                        Joined Microsoft through the Microsoft Academy of College Hires (MACH) and attended training sessions aimed at professional development and enterprise skills for college hires
+                    </li>
+                    <li>
+                        Served as a mentor for new MACH hires to the Fargo campus assisting them with onboarding and acclimation to the TAM role
+                    </li>
+                </ul>
+
+
+            </div>
+            <div class="microsoft-fargo-dates">
+                <p><span>February 2013 - July 2014</span></p>
+            </div>
+        </div>
+        <!-- END EXPERIENCE SECTION -->
+
+        <!-- BEGIN PROJECTS SECTION -->
+        <div class="projects" id="projects">
+            <h1>Projects</h1>
+            <a href="https://github.com/phillipmolock/node-chat-app" target="_blank">
+                <div class="node-chat-app">Node Chat App</div>
+            </a>
+            <a href="#">
+                <div class="node-weather-app">Node Weather App</div>
+            </a>
+            <a href="#">
+                <div class="eth-chainlist">Ethereum Chainlist</div>
+            </a>
+            <a href="#">
+                <div class="node-webserver">Node Webserver</div>
+            </a>
+
+        </div>
+        <!-- END PROJECTS SECTION -->
+
+        <!-- BEGIN EDUCATION SECTION -->
+        <div class="education" id="education">
+            <h1>Education</h1>
+            <div class="uga-mis">
+                <h2>The University of Georgia (UGA), Terry College of Business</h2>
+                <h3>Bachelor of Business Administration in Management Information Systems</h3>
+                <ul>
+                    <li>Overall GPA: 3.50/4.00</li>
+                </ul>
+            </div>
+            <div class="uga-mis-dates">
+                <p>December 2012</p>
+            </div>
+            <div class="uga-econ">
+                <h2>UGA, Terry College of Business</h2>
+                <h3>Bachelor of Business Administration in Economics</h3>
+                <ul>
+                    <li>Overall GPA: 3.42/4.00</li>
+                    <li>Honors: Hope Scholarship Recipient, Dean’s List</li>
+                    <li>Senior Thesis: “Intertemporal Consequences of Central Banking”</li>
+                </ul>
+            </div>
+            <div class="uga-econ-dates">
+                <p>December 2010</p>
+            </div>
+        </div>
+        <!-- END EXPERIENCE SECTION -->
+    </main>
+
+    <!-- 
+
+            FOOTER 
+
+        -->
+
+    <footer>
+        <div class="copyright">
+            <p>Phillip Dane &copy; 2018</p>
+        </div>
+
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="resources/js/index.js"></script>
+</body>
+
 </html>
