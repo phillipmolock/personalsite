@@ -51,9 +51,7 @@ main {
     grid-template-areas: 
         "experience"
         "projects"
-        "lets-talk"
-        "education";
-    
+        "lets-connect";
     width: 100%;
     
 }
@@ -254,18 +252,18 @@ LETS TALK
 -----------------------------------------------------------------------------------
 */
 
-.lets-talk {
+.lets-connect {
     text-align: center;
-    grid-area: lets-talk;
+    grid-area: lets-connect;
     display: grid;
     padding: 2.5% 10% 0 10%;
 }
 
-.lets-talk h1 {
+.lets-connect h1 {
     text-align: center;
 }
 
-.lets-talk ul li {
+.lets-connect ul li {
     list-style-position: inside;
     list-style: none;
     display: inline-block;
@@ -274,7 +272,7 @@ LETS TALK
     font-size: 500%;
 }
 
-.lets-talk a {
+.lets-connect a {
     color: black;
 }
 
